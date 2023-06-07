@@ -1,0 +1,11 @@
+# ignore vs files
+.vs/*
+*.vcxproj
+*.vcxproj*
+*.sln
+
+# ignore cmake build files and temp files
+cmake-build/*
+CMakeFiles/*
+CMakeCache.txt
+cmake_install.cmake
