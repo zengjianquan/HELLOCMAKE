@@ -1,7 +1,9 @@
 project(HELLO_CMAKE)
 
-message(status "This is BINARY dir " ${HELLO_CMAKE_BINARY_DIR})
+set(CMAKE_INSTALL_PREFIX ./install)
 
-message(status "This is SOURCE dir "${HELLO_CMAKE_SOURCE_DIR})
+add_subdirectory(HELLO_CMAKE bin)
 
-add_executable(hello HELLO_CMAKE/HELLO_CMAKE.cpp)
+add_subdirectory(Library bin)
+
+add_subdirectory(LinkLibrary bin)
