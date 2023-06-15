@@ -1,0 +1,1 @@
+add_executable(HELLO_CMAKE HELLO_CMAKE.cpp)
