@@ -1,1 +1,2 @@
-add_executable(HELLO_CMAKE HELLO_CMAKE.cpp)
+file(GLOB_RECURSE HELLOCMAKE_SRC_FILES ./*.cpp)
+add_executable(HELLO_CMAKE ${HELLOCMAKE_SRC_FILES})
